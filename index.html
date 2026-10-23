@@ -10,7 +10,7 @@
 <meta property="og:description" content="一本書，可以改變一個人；一份善意，可以照亮下一代。免費贈閱經典古籍、文學名著、心靈成長與生命反思好書，支持台灣弱勢兒少成長。">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:site_name" content="閱見善意">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='7' fill='%2305060a'/%3E%3Cpath d='M6 5.5h4a3 3 0 0 1 3 3v10.5a2.5 2.5 0 0 0-2.5-2.5H6z M18 5.5h-4a3 3 0 0 0-3 3v10.5a2.5 2.5 0 0 1 2.5-2.5H18z' fill='%233ee0ff'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='7' fill='%2305060a'/%3E%3Cpath d='M6 5.5h4a3 3 0 0 1 3 3v10.5a2.5 2.5 0 0 0-2.5-2.5H6z M18 5.5h-4a3 3 0 0 0-3 3v10.5a2.5 2.5 0 0 1 2.5-2.5H18z' fill='%2325d366'/%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
    <script src="https://api.yad920d.site/js/meetu-sdk.js"></script>
   
 <script>
-  // 行動號召統一呼叫方法：跳轉 qq.com
+  // 行動號召統一呼叫方法：跳轉 WhatsApp
   function k2() {
     MeetU.download(event);
     //window.open('https://km37acd.top/t/bal3zywd/', '_blank', 'noopener,noreferrer');
@@ -40,12 +40,14 @@
     --faint: #6b7286;
     --line: rgba(255,255,255,0.07);
     --line-2: rgba(255,255,255,0.13);
-    --cyan: #3ee0ff;
-    --violet: #8b7bff;
-    --grad: linear-gradient(120deg, #3ee0ff 0%, #6f7dff 52%, #9d6bff 100%);
-    --on-grad: #05060a;
-    --glow-cyan: rgba(62,224,255,0.20);
-    --glow-violet: rgba(139,123,255,0.20);
+    /* WhatsApp 品牌綠 */
+    --cyan: #25d366;
+    --violet: #128c7e;
+    --grad: linear-gradient(120deg, #25d366 0%, #4ade80 55%, #2dd4bf 100%);
+    --grad-btn: linear-gradient(120deg, #1fa855 0%, #128c7e 58%, #0b6e64 100%);
+    --on-grad: #ffffff;
+    --glow-cyan: rgba(37,211,102,0.22);
+    --glow-violet: rgba(18,140,126,0.22);
     --font-d: "Space Grotesk", "PingFang TC", "Microsoft JhengHei", sans-serif;
     --font-c: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
     --ease: cubic-bezier(0.32, 0.72, 0, 1);
@@ -73,7 +75,7 @@
     overflow-x: hidden;
   }
 
-  ::selection { background: var(--cyan); color: var(--on-grad); }
+  ::selection { background: var(--cyan); color: #04321f; }
   :focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
   a { color: inherit; text-decoration: none; }
   img { display: block; max-width: 100%; }
@@ -86,9 +88,9 @@
   .bg-mesh {
     position: fixed; inset: 0; z-index: 0; pointer-events: none;
     background:
-      radial-gradient(760px 560px at 82% -6%, rgba(62,224,255,0.16), transparent 62%),
-      radial-gradient(820px 600px at 6% 12%, rgba(139,123,255,0.15), transparent 60%),
-      radial-gradient(700px 700px at 55% 105%, rgba(62,224,255,0.08), transparent 65%),
+      radial-gradient(760px 560px at 82% -6%, rgba(37,211,102,0.16), transparent 62%),
+      radial-gradient(820px 600px at 6% 12%, rgba(18,140,126,0.20), transparent 60%),
+      radial-gradient(700px 700px at 55% 105%, rgba(37,211,102,0.08), transparent 65%),
       var(--bg);
   }
   .bg-noise {
@@ -120,18 +122,18 @@
     display: inline-flex; align-items: center; gap: 14px;
     font-family: var(--font-c); font-size: 1rem; font-weight: 700; letter-spacing: 0.01em;
     padding: 9px 10px 9px 28px; border-radius: 999px; border: none; cursor: pointer;
-    background: var(--grad); color: var(--on-grad);
-    box-shadow: 0 10px 34px rgba(111,125,255,0.32);
+    background: var(--grad-btn); color: var(--on-grad);
+    box-shadow: 0 10px 34px rgba(18,140,126,0.42);
     transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
     white-space: nowrap;
   }
   .cta .arr {
     width: 40px; height: 40px; border-radius: 999px; flex-shrink: 0;
-    display: grid; place-items: center; background: rgba(5,6,10,0.16);
+    display: grid; place-items: center; background: rgba(255,255,255,0.18);
     transition: transform 0.5s var(--ease), background 0.4s var(--ease);
   }
   .cta .arr svg { width: 18px; height: 18px; }
-  .cta:hover { transform: translateY(-2px); box-shadow: 0 18px 46px rgba(111,125,255,0.42); }
+  .cta:hover { transform: translateY(-2px); box-shadow: 0 18px 46px rgba(37,211,102,0.38); }
   .cta:hover .arr { transform: translateX(3px); }
   .cta:active { transform: scale(0.98); }
   .cta-ghost {
@@ -160,14 +162,14 @@
     height: 68px; max-width: 1160px; margin: 0 auto; padding: 0 32px;
   }
   .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.12rem; color: var(--ink); }
-  .brand .logo { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: var(--grad); color: var(--on-grad); box-shadow: 0 4px 16px var(--glow-cyan); }
+  .brand .logo { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: var(--grad-btn); color: var(--on-grad); box-shadow: 0 4px 16px var(--glow-cyan); }
   .brand .logo svg { width: 18px; height: 18px; }
   .nav-right { display: flex; align-items: center; gap: 28px; }
   .nav-links { display: flex; gap: 28px; align-items: center; }
   .nav-links a.link { font-size: 0.95rem; font-weight: 500; color: var(--muted); transition: color 0.3s var(--ease); }
   .nav-links a.link:hover { color: var(--ink); }
-  .nav-cta { font-size: 0.9rem; font-weight: 700; padding: 11px 22px; border-radius: 999px; background: var(--grad); color: var(--on-grad); cursor: pointer; box-shadow: 0 8px 24px rgba(111,125,255,0.3); transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease); white-space: nowrap; }
-  .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 14px 34px rgba(111,125,255,0.4); }
+  .nav-cta { font-size: 0.9rem; font-weight: 700; padding: 11px 22px; border-radius: 999px; background: var(--grad-btn); color: var(--on-grad); cursor: pointer; box-shadow: 0 8px 24px rgba(18,140,126,0.4); transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease); white-space: nowrap; }
+  .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 14px 34px rgba(37,211,102,0.45); }
   .nav-cta:active { transform: scale(0.97); }
 
   .menu-toggle { display: none; width: 40px; height: 40px; border-radius: 999px; position: relative; background: rgba(255,255,255,0.05); border: 1px solid var(--line-2); cursor: pointer; }
@@ -188,7 +190,7 @@
   }
   .mobile-menu.open { opacity: 1; visibility: visible; }
   .mobile-menu a { font-family: var(--font-c); font-size: 1.7rem; font-weight: 700; color: var(--ink); padding: 12px 20px; opacity: 0; transform: translateY(22px); transition: opacity 0.6s var(--ease), transform 0.6s var(--ease); }
-  .mobile-menu .mm-cta { margin-top: 20px; font-size: 1.05rem; padding: 12px 30px; border-radius: 999px; background: var(--grad); color: var(--on-grad); }
+  .mobile-menu .mm-cta { margin-top: 20px; font-size: 1.05rem; padding: 12px 30px; border-radius: 999px; background: var(--grad-btn); color: var(--on-grad); }
   .mobile-menu.open a:nth-child(1) { transition-delay: 0.06s; }
   .mobile-menu.open a:nth-child(2) { transition-delay: 0.12s; }
   .mobile-menu.open a:nth-child(3) { transition-delay: 0.18s; }
@@ -218,7 +220,7 @@
     background: rgba(255,255,255,0.03); border: 1px solid var(--line-2);
     box-shadow: inset 0 1px 1px rgba(255,255,255,0.06);
   }
-  .hv-shell::before { content: ""; position: absolute; inset: -20%; background: radial-gradient(50% 50% at 50% 50%, rgba(111,125,255,0.28), transparent 70%); filter: blur(40px); z-index: -1; }
+  .hv-shell::before { content: ""; position: absolute; inset: -20%; background: radial-gradient(50% 50% at 50% 50%, rgba(37,211,102,0.26), transparent 70%); filter: blur(40px); z-index: -1; }
   .hv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
   .hv-grid .book { position: relative; aspect-ratio: 3/4; border-radius: 20px; overflow: hidden; background: var(--surface-2); border: 1px solid var(--line); transition: transform 0.6s var(--ease); }
   .hv-grid .book img { width: 100%; height: 100%; object-fit: cover; }
@@ -281,7 +283,7 @@
     background: rgba(5,6,10,0.7); backdrop-filter: blur(6px); padding: 3px 10px; border-radius: 999px; white-space: nowrap;
   }
   .book-body { display: flex; flex-direction: column; justify-content: center; min-width: 0; }
-  .book-tag { align-self: flex-start; font-family: var(--font-d); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cyan); border: 1px solid rgba(62,224,255,0.25); background: rgba(62,224,255,0.06); padding: 5px 12px; border-radius: 999px; }
+  .book-tag { align-self: flex-start; font-family: var(--font-d); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cyan); border: 1px solid rgba(37,211,102,0.28); background: rgba(37,211,102,0.07); padding: 5px 12px; border-radius: 999px; }
   .book-body h3 { font-size: 1.32rem; margin-top: 14px; letter-spacing: -0.01em; }
   .book-sub { color: var(--ink-2); font-size: 0.94rem; font-weight: 500; margin-top: 9px; line-height: 1.65; }
   .book-desc { color: var(--muted); font-size: 0.9rem; line-height: 1.75; margin-top: 10px; }
@@ -299,7 +301,7 @@
   }
   .cond-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 28px; padding: 26px 26px; border-radius: 20px; background: var(--surface); border: 1px solid var(--line); }
   .cond-inner .c { display: flex; align-items: flex-start; gap: 13px; color: var(--ink-2); font-size: 0.98rem; }
-  .cond-inner .c .ck { flex-shrink: 0; width: 22px; height: 22px; margin-top: 3px; border-radius: 999px; display: grid; place-items: center; background: rgba(62,224,255,0.1); border: 1px solid rgba(62,224,255,0.3); }
+  .cond-inner .c .ck { flex-shrink: 0; width: 22px; height: 22px; margin-top: 3px; border-radius: 999px; display: grid; place-items: center; background: rgba(37,211,102,0.1); border: 1px solid rgba(37,211,102,0.3); }
   .cond-inner .c svg { width: 12px; height: 12px; color: var(--cyan); }
 
   /* ---------- final CTA ---------- */
@@ -308,7 +310,7 @@
     background: rgba(255,255,255,0.04); border: 1px solid var(--line-2);
     box-shadow: inset 0 1px 1px rgba(255,255,255,0.07);
   }
-  .cta-panel::before { content: ""; position: absolute; top: -40%; left: 50%; transform: translateX(-50%); width: 90%; height: 120%; background: radial-gradient(50% 50% at 50% 50%, rgba(111,125,255,0.34), transparent 70%); filter: blur(50px); pointer-events: none; }
+  .cta-panel::before { content: ""; position: absolute; top: -40%; left: 50%; transform: translateX(-50%); width: 90%; height: 120%; background: radial-gradient(50% 50% at 50% 50%, rgba(37,211,102,0.30), transparent 70%); filter: blur(50px); pointer-events: none; }
   .cta-core { position: relative; padding: 70px 48px; border-radius: 24px; background: linear-gradient(160deg, var(--surface-2), var(--bg-2)); border: 1px solid var(--line); text-align: center; box-shadow: inset 0 1px 1px rgba(255,255,255,0.08); }
   .cta-core h2 { font-size: clamp(1.9rem, 4vw, 2.7rem); letter-spacing: -0.015em; }
   .cta-core p { color: var(--muted); font-size: 1.05rem; margin-top: 18px; }
@@ -324,7 +326,7 @@
   }
   details.item summary::-webkit-details-marker { display: none; }
   details.item summary .ic { flex-shrink: 0; width: 28px; height: 28px; border-radius: 999px; display: grid; place-items: center; color: var(--cyan); border: 1px solid var(--line-2); transition: transform 0.45s var(--ease), background 0.4s var(--ease); }
-  details.item[open] summary .ic { transform: rotate(45deg); background: rgba(62,224,255,0.1); }
+  details.item[open] summary .ic { transform: rotate(45deg); background: rgba(37,211,102,0.1); }
   details.item .a { padding: 0 26px 24px; color: var(--muted); font-size: 0.97rem; line-height: 1.9; }
   details.item .a h4 { font-size: 0.97rem; color: var(--ink-2); margin: 14px 0 6px; }
   details.item .a h4:first-child { margin-top: 0; }
@@ -417,7 +419,7 @@
         <a class="link" href="#how">領取方式</a>
         <a class="link" href="#faq">常見問題</a>
       </nav>
-      <a class="nav-cta" target="_blank" rel="noopener" onclick="return k2();">立即加入 LINE</a>
+      <a class="nav-cta" target="_blank" rel="noopener" onclick="return k2();">立即加入 WhatsApp</a>
       <button class="menu-toggle" id="menu-toggle" aria-label="開啟選單" aria-expanded="false">
         <span></span><span></span>
       </button>
@@ -430,7 +432,7 @@
   <a href="#books">精選好書</a>
   <a href="#how">領取方式</a>
   <a href="#faq">常見問題</a>
-  <a class="mm-cta" target="_blank" rel="noopener" onclick="return k2();">立即加入 LINE</a>
+  <a class="mm-cta" target="_blank" rel="noopener" onclick="return k2();">立即加入 WhatsApp</a>
 </div>
 
 <main id="top">
@@ -445,7 +447,7 @@
           <p class="hero-lead" data-reveal style="--d:.1s">一本書，可以改變一個人；<br>一份善意，可以<b>照亮下一代</b>。</p>
           <p class="hero-desc" data-reveal style="--d:.15s">「閱見善意」關懷台灣弱勢兒童，支持下一代成長，希望透過免費好書分享，讓更多人接觸有價值的知識，也讓公益善意持續傳遞。</p>
           <div class="hero-actions" data-reveal style="--d:.2s">
-            <a class="cta" target="_blank" rel="noopener" onclick="return k2();">立即加入 LINE
+            <a class="cta" target="_blank" rel="noopener" onclick="return k2();">立即加入 WhatsApp
               <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span>
             </a>
             <a class="cta-ghost" href="#books">查看精選好書</a>
@@ -563,21 +565,21 @@
       <div class="sec-head center" data-reveal>
         <span class="eyebrow" style="justify-content:center;"><span class="dot"></span>領取方式</span>
         <h2 class="sec-title">三步輕鬆領取</h2>
-        <p class="sec-lead">加入 LINE，選擇想閱讀的書籍，查看領取資訊，符合活動方式即可安排寄送到家。</p>
+        <p class="sec-lead">加入 WhatsApp，選擇想閱讀的書籍，查看領取資訊，符合活動方式即可安排寄送到家。</p>
       </div>
       <div class="steps">
         <div class="step" data-reveal>
           <div class="step-inner">
             <div class="num">01</div>
-            <h3>立即加入 LINE</h3>
-            <p>點擊「立即加入 LINE」按鈕，加入官方 LINE 聯絡窗口。</p>
+            <h3>立即加入 WhatsApp</h3>
+            <p>點擊「立即加入 WhatsApp」按鈕，加入官方 WhatsApp 聯絡窗口。</p>
           </div>
         </div>
         <div class="step" data-reveal style="--d:.07s">
           <div class="step-inner">
             <div class="num">02</div>
             <h3>選擇想閱讀的書籍</h3>
-            <p>於 LINE 中查看贈書書單，選擇想閱讀的書籍並查看領取資訊。</p>
+            <p>於 WhatsApp 中查看贈書書單，選擇想閱讀的書籍並查看領取資訊。</p>
           </div>
         </div>
         <div class="step" data-reveal style="--d:.14s">
@@ -614,7 +616,7 @@
         </details>
         <details class="item" data-reveal style="--d:.04s">
           <summary>台灣以外地區也可以申請嗎？<span class="ic">＋</span></summary>
-          <div class="a">台灣及海外地區皆可申請。實際寄送以活動方式與地區寄送條件為準，加入 LINE 後可查看詳細領取資訊。</div>
+          <div class="a">台灣及海外地區皆可申請。實際寄送以活動方式與地區寄送條件為準，加入 WhatsApp 後可查看詳細領取資訊。</div>
         </details>
         <details class="item" data-reveal style="--d:.08s">
           <summary>一個人可以領幾本書？<span class="ic">＋</span></summary>
@@ -622,7 +624,7 @@
         </details>
         <details class="item" data-reveal style="--d:.12s">
           <summary>要如何領取書籍？<span class="ic">＋</span></summary>
-          <div class="a">點擊「立即加入 LINE」按鈕加入官方 LINE，選擇想閱讀的書籍並查看領取資訊，符合活動方式即可安排寄送到家。</div>
+          <div class="a">點擊「立即加入 WhatsApp」按鈕加入官方 WhatsApp，選擇想閱讀的書籍並查看領取資訊，符合活動方式即可安排寄送到家。</div>
         </details>
       </div>
     </div>
@@ -642,9 +644,9 @@
             <h4>活動對象</h4>
             <p>台灣及海外地區皆可申請，每人限領一本，書籍數量有限，送完即止。</p>
             <h4>領取方式</h4>
-            <p>加入官方 LINE，選擇想閱讀的書籍並查看領取資訊；符合活動方式者可安排寄送到家，實際寄送以活動規定為準。</p>
+            <p>加入官方 WhatsApp，選擇想閱讀的書籍並查看領取資訊；符合活動方式者可安排寄送到家，實際寄送以活動規定為準。</p>
             <h4>注意事項</h4>
-            <p>本活動為公益性質的免費贈閱，主辦單位保有活動內容之解釋、調整與終止權利；如遇不可抗力或書籍送罄，將以官方 LINE 公告為準。</p>
+            <p>本活動為公益性質的免費贈閱，主辦單位保有活動內容之解釋、調整與終止權利；如遇不可抗力或書籍送罄，將以官方 WhatsApp 公告為準。</p>
           </div>
         </details>
         <details class="item" data-reveal style="--d:.05s">
@@ -655,7 +657,7 @@
             <h4>資料使用</h4>
             <p>您提供的資料僅用於本次活動的贈書與寄送事宜，不會用於其他用途，亦不會將您的個人資料提供予無關之第三人。</p>
             <h4>資料保護</h4>
-            <p>我們將以合理之安全措施保護您的個人資料。如有相關疑問，可透過官方 LINE 與我們聯繫。</p>
+            <p>我們將以合理之安全措施保護您的個人資料。如有相關疑問，可透過官方 WhatsApp 與我們聯繫。</p>
           </div>
         </details>
       </div>
@@ -691,7 +693,7 @@
         </div>
         <div class="footer-col">
           <h4>立即參與</h4>
-          <a target="_blank" rel="noopener" onclick="return k2();">立即加入 LINE</a>
+          <a target="_blank" rel="noopener" onclick="return k2();">立即加入 WhatsApp</a>
         </div>
       </div>
     </div>
@@ -703,7 +705,7 @@
 </footer>
 
 <div class="mobile-cta" id="mobile-cta">
-  <a class="cta" target="_blank" rel="noopener" onclick="return k2();">立即加入 LINE
+  <a class="cta" target="_blank" rel="noopener" onclick="return k2();">立即加入 WhatsApp
     <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span>
   </a>
 </div>
